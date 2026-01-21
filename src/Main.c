@@ -6,13 +6,13 @@
 
 Scene scene;
 
-void Button1_React(Button* b,ButtonEvent* be){
+void Button1_React(void* parent,Button* b,ButtonEvent* be){
 
 }
-void Button2_React(Button* b,ButtonEvent* be){
+void Button2_React(void* parent,Button* b,ButtonEvent* be){
 
 }
-void Button3_React(Button* b,ButtonEvent* be){
+void Button3_React(void* parent,Button* b,ButtonEvent* be){
 
 }
 
