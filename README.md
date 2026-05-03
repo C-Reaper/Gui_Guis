@@ -52,7 +52,7 @@ wine64 ./build/Main.exe
 To build and run the project on the web using Emscripten:
 ```sh
 cd <Project>
-emcc -O0 -msimd128 -mavx2 -std=gnu17 -Isrc -D_WEB -sINITIAL_MEMORY=169082880 src/*.c -o build/index.html --no_browser --port 8080
+emcc -O0 -msimd128 -mavx2 -std=gnu17 -Wall -Wno-unused -Wshadow -Werror -Isrc -D_WEB -sINITIAL_MEMORY=169082880 src/*.c -o build/index.html --no_browser --port 8080
 ```
 Then open `http://localhost:8080` in a web browser to view the application.
 
